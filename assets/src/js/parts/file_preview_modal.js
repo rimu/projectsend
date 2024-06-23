@@ -37,7 +37,7 @@
                         case 'video':
                             content = `
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <video controls>
+                                    <video controls class="w-100">
                                         <source src="`+obj.file_url+`" format="`+obj.mime_type+`">
                                     </video>
                                 </div>`;
