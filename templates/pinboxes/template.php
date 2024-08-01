@@ -1,9 +1,9 @@
 <?php
 /*
 Template name: PinBoxes
-URI: http://www.projectsend.org/templates/pinboxes
+URI: https://www.projectsend.org/templates/pinboxes
 Author: ProjectSend
-Author URI: http://www.projectsend.org/
+Author URI: https://www.projectsend.org/
 Author e-mail: contact@projectsend.org
 Description: Inspired by the awesome design of Pinterest!
 */
@@ -28,14 +28,14 @@ define('TEMPLATE_THUMBNAILS_HEIGHT', '400');
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title><?php echo html_output( $client_info['name'].' | '.$window_title . ' &raquo; ' . SYSTEM_NAME ); ?></title>
 		<?php meta_favicon(); ?>
-		<link href='<?php echo PROTOCOL; ?>://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo $this_template_url; ?>/font-awesome-4.6.3/css/font-awesome.min.css">
 		<link rel="stylesheet" media="all" type="text/css" href="<?php echo $this_template_url; ?>main.min.css" />
         
         <script>
             window.base_url = '<?php echo BASE_URI; ?>';
         </script>
-        <script src="<?php echo PROTOCOL; ?>://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+        <script src="<?php echo $this_template_url; ?>/js/jquery.1.11.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 		<script src="<?php echo $this_template_url; ?>/js/jquery.masonry.min.js"></script>
         <script src="<?php echo $this_template_url; ?>/js/imagesloaded.pkgd.min.js"></script>

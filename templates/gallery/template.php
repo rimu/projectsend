@@ -1,14 +1,14 @@
 <?php
 /*
 Template name: Gallery
-URI: http://www.projectsend.org/templates/gallery
+URI: https://www.projectsend.org/templates/gallery
 Author: ProjectSend
-Author URI: http://www.projectsend.org/
+Author URI: https://www.projectsend.org/
 Author e-mail: contact@projectsend.org
 Description: Shows only images (jpg, gif, and png). Do not use if you plan to upload other file types! They will not be shown.
 
-Background modified from: http://www.artofadambetts.com/weblog/2008/05/black-leather-apple-desktop-background/
-Delete icon: http://www.iconfinder.com/icondetails/37519/16/can_delete_trash_icon
+Background modified from: https://www.artofadambetts.com/weblog/2008/05/black-leather-apple-desktop-background/
+Delete icon: https://www.iconfinder.com/icondetails/37519/16/can_delete_trash_icon
 */
 
 $ld = 'cftp_template_gallery'; // specify the language domain for this template
@@ -45,8 +45,8 @@ define('TEMPLATE_THUMBNAILS_HEIGHT', '215');
 	<?php meta_favicon(); ?>
 
 	<link rel="stylesheet" href="<?php echo $this_template_url; ?>/font-awesome-4.6.3/css/font-awesome.min.css">
-	<script src="<?php echo PROTOCOL; ?>://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
-	<link href='<?php echo PROTOCOL; ?>://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script src="<?php echo $this_template_url; ?>/js/jquery.1.11.1.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" media="all" type="text/css" href="<?php echo $this_template_url; ?>main.min.css" />
 
