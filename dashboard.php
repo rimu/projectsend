@@ -4,6 +4,8 @@
  */
 $allowed_levels = array(9, 8, 7);
 require_once 'bootstrap.php';
+log_in_required($allowed_levels);
+
 $page_title = __('Dashboard', 'cftp_admin');
 
 $active_nav = 'dashboard';

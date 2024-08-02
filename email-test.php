@@ -5,6 +5,7 @@
  */
 $allowed_levels = array(9);
 require_once 'bootstrap.php';
+log_in_required($allowed_levels);
 
 $page_title = __('Test email configuration', 'cftp_admin');
 

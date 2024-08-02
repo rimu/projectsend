@@ -5,6 +5,7 @@
  */
 $allowed_levels = array(9);
 require_once 'bootstrap.php';
+log_in_required($allowed_levels);
 
 $asset = new \ProjectSend\Classes\CustomAsset();
 

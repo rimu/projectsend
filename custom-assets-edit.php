@@ -5,6 +5,7 @@
  */
 $allowed_levels = array(9);
 require_once 'bootstrap.php';
+log_in_required($allowed_levels);
 
 $asset_id = (int)$_GET['id'];
 if (!is_integer($asset_id)) {
