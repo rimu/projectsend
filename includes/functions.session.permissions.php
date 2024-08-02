@@ -105,6 +105,11 @@ function redirect_if_role_not_allowed($allowed_levels = null) {
 function password_change_required()
 {
     global $flash;
+
+    if (!defined('CURRENT_USER_ID')) {
+        return;
+    }
+
     $session_user = new \ProjectSend\Classes\Users(CURRENT_USER_ID);
 
     if ($session_user->requiresPasswordChange()) {
