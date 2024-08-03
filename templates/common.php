@@ -171,8 +171,10 @@ if (!empty($found_all_files_array)) {
 
     // Should it include public files as well?
     if (get_option('clients_files_list_include_public') == '1') {
-        $files_query .= " OR public_allow = :public";
-        $params[':public'] = '1';
+        if (!isset($_GET['category'])) {
+            $files_query .= " OR public_allow = :public";
+            $params[':public'] = '1';
+        }
     }
 
     $files_query .= ')';
