@@ -26,7 +26,7 @@
     <div class="col-sm-8">
         <input type="text" class="form-control" name="timeformat" id="timeformat" value="<?php echo get_option('timeformat'); ?>" required />
         <p class="field_note form-text"><?php echo sprintf(__('For example, %s will display the current date and time like this: %s','cftp_admin'), 'd/m/Y h:i:s', date('d/m/Y h:i:s')); ?><br>
-            <?php echo sprintf(__("For the full list of available values, visit %s the official PHP Manual %s",'cftp_admin'), '<a href="http://php.net/manual/en/function.date.php" target="_blank">', '</a>'); ?><br>
+            <?php echo sprintf(__("For the full list of available values, visit %s the official PHP Manual %s",'cftp_admin'), '<a href="https://php.net/manual/en/function.date.php" target="_blank">', '</a>'); ?><br>
             <?php _e("This date will be considered for files expiration.",'cftp_admin'); ?><br>
             <?php _e("You can adjust your timezone if your local date/time does not match your server's settings.",'cftp_admin'); ?>
         </p>
@@ -188,8 +188,13 @@
 <h3><?php _e('Custom download URI','cftp_admin'); ?></h3>
 
 <div class="form-group row">
-    <label for="custom_download_uri" class="col-sm-4 control-label"><?php _e('Custom download URI','cftp_admin'); ?></label>
+    <label for="custom_download_uri" class="col-sm-4 control-label"><?php _e('Custom download URI base','cftp_admin'); ?></label>
     <div class="col-sm-8">
         <input type="text" class="form-control" name="custom_download_uri" id="custom_download_uri" value="<?php echo get_option('custom_download_uri'); ?>" />
+        <p class="field_note form-text">
+            <?php echo sprintf(__("The default URL base is %s. If you set up a custom domain that acts as shortener set the URL here.",'cftp_admin'), BASE_URI.'custom-download.php?link='); ?><br>
+            <?php echo sprintf(__('When setting up your vhost, make sure to redirect to %s','cftp_admin'), BASE_URI.'custom-download.php?link=$file_alias'); ?><br>
+            <?php /* <a href="" target="_blank"><?php _e('Find examples in the documentation'); ?></a> */ ?>
+        </p>
     </div>
 </div>
