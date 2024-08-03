@@ -116,9 +116,12 @@ define('TEMPLATE_THUMBNAILS_HEIGHT', '215');
 		</header>
 			
 		<div id="content">
-		
-			<?php
-				if (!$count) {
+            <?php
+                $current_url = get_form_action_with_existing_parameters('index.php');
+                //include_once LAYOUT_DIR . DS . 'breadcrumbs.php';
+                include_once LAYOUT_DIR . DS . 'folders-nav.php';
+
+                if (!$count) {
 					_e('There are no files.','cftp_template_gallery');
 				}
 				else {

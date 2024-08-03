@@ -114,13 +114,17 @@ define('TEMPLATE_THUMBNAILS_HEIGHT', '400');
 				</li>
 			</ul>
 		</div>
-			
+
 		<div id="content">
 			<div class="content_cover"></div>
 			<div class="wrapper">
 		
-		<?php
-			if (!$count) {
+            <?php
+                $current_url = get_form_action_with_existing_parameters('index.php');
+                include_once LAYOUT_DIR . DS . 'breadcrumbs.php';
+                include_once LAYOUT_DIR . DS . 'folders-nav.php';
+
+            if (!$count) {
 		?>
 				<div class="no_files">
 					<?php
