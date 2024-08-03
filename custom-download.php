@@ -1,5 +1,4 @@
 <?php
-
 $allowed_levels = array(9, 8, 7, 0);
 require_once 'bootstrap.php';
 
@@ -47,4 +46,5 @@ $statement->bindParam(':visit_count', $visit_count, PDO::PARAM_INT);
 $statement->bindParam(':link', $link);
 $statement->execute();
 
-ps_redirect(BASE_URI . "download.php?id={$file->id}&token={$file->public_token}");
+$location = BASE_URI . "download.php?id={$file->id}&token={$file->public_token}";
+ps_redirect($location);
