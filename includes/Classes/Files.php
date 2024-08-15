@@ -1229,6 +1229,9 @@ class Files
     public function saveCategories($categories = [])
     {
         $allowed = array(9,8,7);
+        if (get_option('clients_can_set_categories') == 1) {
+            $allowed[] = 0;
+        }
         if (!current_role_in($allowed)) {
             return false;
         }

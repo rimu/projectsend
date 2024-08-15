@@ -508,6 +508,7 @@ include_once LAYOUT_DIR . DS . 'folders-nav.php';
                         'is_not_client' => (CURRENT_USER_LEVEL != '0') ? true : false,
                         'can_set_public' => (CURRENT_USER_LEVEL != '0' || current_user_can_upload_public()) ? true : false,
                         'can_set_expiration' => (CURRENT_USER_LEVEL != '0' || get_option('clients_can_set_expiration_date') == '1') ? true : false,
+                        'can_set_categories' => (CURRENT_USER_LEVEL != '0' || get_option('clients_can_set_categories') == '1') ? true : false,
                         'total_downloads' => (CURRENT_USER_LEVEL != '0' && !isset($search_on)) ? true : false,
                         'is_search_on' => (isset($search_on)) ? true : false,
                     );
@@ -578,7 +579,7 @@ include_once LAYOUT_DIR . DS . 'folders-nav.php';
                             'sortable' => false,
                             'content' => __('Categories', 'cftp_admin'),
                             'hide' => 'phone',
-                            'condition' => $conditions['is_not_client'],
+                            'condition' => $conditions['can_set_categories'],
                         ),
                         array(
                             'content' => __('Status', 'cftp_admin'),
@@ -803,7 +804,7 @@ include_once LAYOUT_DIR . DS . 'folders-nav.php';
                             ),
                             array(
                                 'content' => $categories_list,
-                                'condition' => $conditions['is_not_client'],
+                                'condition' => $conditions['can_set_categories'],
                             ),
                             array(
                                 'content' => '<span class="badge bg-' . $status_class . '">' . $status_label . '</span>',

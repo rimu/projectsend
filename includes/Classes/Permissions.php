@@ -83,6 +83,10 @@ class Permissions {
                 $this->permissions['set_file_expiration_date'] = true;
             }
 
+            if (get_option('clients_can_set_categories') == 1) {
+                $this->permissions['set_file_categories'] = true;
+            }
+
             $this->permissions['upload_public'] = client_can_upload_public($this->user->id);
         }
     }

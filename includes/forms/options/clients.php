@@ -94,6 +94,16 @@
 </div>
 
 <div class="form-group row">
+    <div class="col-sm-8 offset-sm-4">
+        <label for="clients_can_set_categories">
+            <input type="checkbox" value="1" name="clients_can_set_categories" id="clients_can_set_categories" class="checkbox_options" <?php echo (get_option('clients_can_set_categories') == 1) ? 'checked="checked"' : ''; ?> /> <?php _e('Clients can asssign categories to files','cftp_admin'); ?>
+        </label>
+        <p class="field_note form-text"><?php _e("IMPORTANT: This will make all categories visible to all users.",'cftp_admin'); ?></p>
+    </div>
+</div>
+
+
+<div class="form-group row">
     <label for="clients_can_select_group" class="col-sm-4 control-label"><?php _e('Clients can set own files as public:','cftp_admin'); ?></label>
     <div class="col-sm-8">
         <select class="form-select" name="clients_can_set_public" id="clients_can_set_public" required>

@@ -40,10 +40,10 @@ class Download
      */
     public function returnFilesIds($file_ids)
     {
-		$this->check_level = array(9,8,7,0);
+		$check_level = array(9,8,7,0);
 		if (isset($file_ids)) {
 			// do a permissions check for logged in user
-			if (current_role_in($this->check_level)) {
+			if (current_role_in($check_level)) {
 				$file_list = [];
 				foreach($file_ids as $key => $data) {
 					$file_list[] = (int)$data['value']; //file-id must be int
