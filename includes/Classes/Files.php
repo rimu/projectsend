@@ -924,7 +924,7 @@ class Files
          */
         if ( CURRENT_USER_LEVEL == 0 ) {
             if (get_option('clients_can_set_expiration_date') != '1') {
-                $this->expires = $current["expires"];
+                $this->expires = (int)$current["expires"];
                 $this->expiry_date = $current["expiry_date"];
             }
             $this->is_public = current_user_can_upload_public() ? $data['public'] : $current["public"];
