@@ -1187,7 +1187,7 @@ msgid "Found"
 msgstr ""
 
 #: includes/Classes/Cron.php:121
-msgid "Succesfully sent"
+msgid "Successfully sent"
 msgstr ""
 
 #: includes/Classes/Cron.php:125 includes/Classes/Cron.php:166
@@ -1204,7 +1204,7 @@ msgid "Delete expired files"
 msgstr ""
 
 #: includes/Classes/Cron.php:162 includes/Classes/Cron.php:206
-msgid "Succesfully deleted"
+msgid "Successfully deleted"
 msgstr ""
 
 #: includes/Classes/Cron.php:190 includes/forms/options/cron.php:60
@@ -4591,7 +4591,7 @@ msgid "Lost password"
 msgstr ""
 
 #: unblock-ip.php:22
-msgid "IP address succesfully unblocked"
+msgid "IP address successfully unblocked"
 msgstr ""
 
 #: unblock-ip.php:40

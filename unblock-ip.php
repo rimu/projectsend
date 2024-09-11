@@ -19,7 +19,7 @@ if ($_POST) {
     global $bfchecker;
     $unblock = $bfchecker->unblockIp($_POST['ip']);
     if ($unblock['status'] == 'success') {
-        $flash->success(__('IP address succesfully unblocked', 'cftp_admin'));
+        $flash->success(__('IP address successfully unblocked', 'cftp_admin'));
     } else {
         $flash->error($unblock['message']);
     }
