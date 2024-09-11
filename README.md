@@ -9,7 +9,7 @@ ProjectSend is a free, clients-oriented, private file sharing web application.
 Clients are created and assigned a username and a password.  
 Uploaded files can be assigned to specific clients or clients groups.
 
-Other featres include auto-expiration of upload, notifications, full logging of actions by users and clients, option to allow clients to also upload files, themes, multiple languages...
+Other features include auto-expiration of upload, notifications, full logging of actions by users and clients, option to allow clients to also upload files, themes, multiple languages...
 
 Main website: [projectsend.org](https://www.projectsend.org)  
 git: [current repository](https://github.com/projectsend/projectsend/)

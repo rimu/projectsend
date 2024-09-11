@@ -118,7 +118,7 @@ class Cron
 
             $notifications->sendNotifications();
             $results['elements']['sent'] = [
-                'label' => __('Succesfully sent', 'cftp_admin'),
+                'label' => __('Successfully sent', 'cftp_admin'),
                 'items' => $notifications->getNotificationsSent()
             ];
             $results['elements']['failed'] = [
@@ -159,7 +159,7 @@ class Cron
             }
 
             $results['elements']['success'] = [
-                'label' => __('Succesfully deleted', 'cftp_admin'),
+                'label' => __('Successfully deleted', 'cftp_admin'),
                 'items' => []
             ];
             $results['elements']['failed'] = [
@@ -203,7 +203,7 @@ class Cron
                     'items' => []
                 ],
                 'success' => [
-                    'label' => __('Succesfully deleted', 'cftp_admin'),
+                    'label' => __('Successfully deleted', 'cftp_admin'),
                     'items' => []
                 ],
                 'failed' => [

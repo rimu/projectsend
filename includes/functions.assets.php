@@ -21,10 +21,10 @@ function get_asset_locations()
 
 function get_asset_positions()
 {
-    $poitions = [
+    $positions = [
         'head' => __('In <head>'),
-        'body_top' => __('After <body>'),
-        'body_bottom' => __('Before </body>'),
+        'body_top' => __('Before <body>'),
+        'body_bottom' => __('After </body>'),
     ];
 
     return str_replace([
@@ -33,7 +33,7 @@ function get_asset_positions()
     ], [
         '&lt',
         '&gt',
-    ], $poitions);
+    ], $positions);
 }
 
 function format_asset_language_name($name)
