@@ -2177,7 +2177,7 @@ msgstr ""
 
 #: includes/forms/options/cron.php:22
 msgid ""
-"It's recommended to keep this checked to prevent unathorized executions of the "
+"It's recommended to keep this checked to prevent unauthorized executions of the "
 "tasks by accessing the URL directly."
 msgstr ""
 
@@ -2188,7 +2188,7 @@ msgid ""
 msgstr ""
 
 #: includes/forms/options/cron.php:31
-msgid "Cron securiy key"
+msgid "Cron security key"
 msgstr ""
 
 #: includes/forms/options/cron.php:34
@@ -4309,7 +4309,7 @@ msgid "Everything is up and running."
 msgstr ""
 
 #: install/install-success.php:19
-msgid "You may proceed to log in with your newely created username and password."
+msgid "You may proceed to log in with your newly created username and password."
 msgstr ""
 
 #: install/make-config.php:140
