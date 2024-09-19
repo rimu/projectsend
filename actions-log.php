@@ -158,7 +158,7 @@ include_once LAYOUT_DIR . DS . 'search-filters-bar.php';
                 $table = new \ProjectSend\Classes\Layout\Table([
                     'id' => 'activities_tbl',
                     'class' => 'footable table',
-                    'origin' => __FILE__,
+                    'origin' => basename(__FILE__),
                 ]);
 
                 $thead_columns = array(
