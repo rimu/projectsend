@@ -837,7 +837,7 @@ class Users
 
     private function limitUploadToSave($clients_ids = [])
     {
-        if (CURRENT_USER_LEVEL == 7) {
+        if (!defined('CURRENT_USER_LEVEL') or CURRENT_USER_LEVEL == 7) {
             return;
         }
 
